@@ -1,16 +1,11 @@
 #include <stdio.h>
 
-void inc(int* x){
-   if(x!=NULL){
-    *x= *x+1;
-    printf("%d\n", *x);
-   }
-}
 int main(){
-    int x= 3;
+    printf("sizeof(int*) = %zu\n", sizeof(int*));
+    printf("sizeof(double*) = %zu\n", sizeof(double*));
+    printf("sizeof(char*) = %zu\n", sizeof(char*));
+    printf("sizeof(void*) = %zu\n", sizeof(void*));
 
-    inc(&x); //4됨
-    inc(NULL);
     return 0;
-
+    
 }
